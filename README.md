@@ -3,14 +3,14 @@
 	Module to be prepared :
 		--> Client's Process Server  
 			--> Communication Module
-				--> Communication Module ( Client - Client
+				--> Communication Module ( Client - Client )
 					--> Module for handling Connection with new connection 
 						:: Listening and serving connection 
 							: Connection handling 
 							: Asking the clinet for which all data to need
 							: Aggrigating data for the client 
 							: Making sure if the data is recived by the user 
-						:: 
+						:: Pinging to all the clients if there is any changes into the file 
 					--> Thread Two for 
 				--> Communication Module ( Client - Tracker)
 					--> Module for asking active client from the server ( address and other info)
@@ -31,6 +31,17 @@
 		--> Tracker Server 
 			--> Communication Module
 				--> Communication Module (Client - Server)
+					--> New Connection 
+						--> First Node 
+							:: For the first connection it should only returns that its the first connection. All the connection will recive a sequence code.
+						--> Successive Connection 
+							:: For the first client node, the endpoint should return the socket which is already connected / Have all the files / Set of all the server that upon combinining all the files.
+
+					--> Old Connection 
+					--> Client Status Updates 
+						--> Seeder and Leachers Status 
+						--> Taking the Updated Socket Id for preexisting connections 
+						--> 
 				
 			--> Data Handling
 				--> Log Mentainance 
