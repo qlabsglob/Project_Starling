@@ -16,8 +16,10 @@ def create_app():
 
     from Logger.routes import logger
     from Communication.routes import communication
+    from DatabaseApi.routes import databaseApi
     app.register_blueprint(logger)
     app.register_blueprint(communication)
+    app.register_blueprint(databaseApi)
     return app
 
 
