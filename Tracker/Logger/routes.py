@@ -5,14 +5,14 @@ import datetime
 # logger = Blueprint('logger', __name__, template_folder='<template/location>')
 logger = Blueprint('logger', __name__)
 
-@logger.route("/postReq", methods=["POST"])
+@logger.route("/logger/postReq", methods=["POST"])
 def postReq():
         return jsonify("Post Request Response")
 
-@logger.route("/getReq", methods=["GET"])
+@logger.route("/logger/getReq", methods=["GET"])
 def getReq():
     return jsonify(" Get Request  Response")
 
-@logger.route("/", methods=["GET"])
+@logger.route("/logger", methods=["GET"])
 def index():
-    return jsonify("This is a tracker Server for the ")
+    return jsonify("Logger Module")
