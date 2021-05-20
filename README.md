@@ -33,9 +33,11 @@
 				--> Communication Module (Client - Server)
 					--> New Connection 
 						--> First Node 
-							:: For the first connection it should only returns that its the first connection. All the connection will recive a sequence code.
+							:: For the first connection it should only returns that its the first connection. 
+							   All the connection will recive a sequence code.
 						--> Successive Connection 
-							:: For the first client node, the endpoint should return the socket which is already connected / Have all the files / Set of all the server that upon combinining all the files.
+							:: For the first client node, the endpoint should return the socket which is already connected / Have all the files 
+							/ Set of all the server that upon combinining all the files.
 
 					--> Old Connection 
 					--> Client Status Updates 
